@@ -1,5 +1,7 @@
 /*Universal Stles*/
-
+.body {
+  font-family:
+}
 
 /*Header*/
 .header {
@@ -18,9 +20,21 @@
 
 .nav {
   padding-right: 24px;
+
   display: flex;
-/*  justify-content: space-between;*/
-  align-items: center;
+
 
   border: solid blue 1px;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  border: solid orange 1px;
+}
+
+.header .nav .square {
+  width: 16px;
+  height: 64px;
+  background-color: skyblue;
 }
