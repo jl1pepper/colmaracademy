@@ -87,3 +87,102 @@
   padding: 8px 5em;
   border: solid green 2px;
 }
+
+
+
+/*newsfeed*/
+
+.newsfeed {
+  padding: 32px 24px;
+  display: flex;
+
+  border: solid green 1px;
+}
+
+.main-news {
+  width: 60%;
+
+  border: solid pink 1px;
+
+
+}
+
+.main-news img {
+  width: 60%;
+
+
+}
+
+.main-news p {
+  overflow: wrap;
+}
+
+.news {
+  width: 40%;
+  display: flex;
+  border: solid blue 1px;
+}
+
+.news img {
+  width: 35%;
+  height: auto;
+}
+
+.newsstory {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+/*course catalog*/
+
+.catalog {
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.courses {
+padding: 16px 56px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.course {
+  padding: 16px 16px;
+  height: auto;
+
+}
+
+
+
+/*thesis*/
+
+video {
+
+  height: auto;
+}
+
+
+
+
+
+/*footer*/
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+/*mobile considerations*/
