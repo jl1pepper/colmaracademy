@@ -5,9 +5,13 @@
 }
 
 .body {
-  font-family:
-}
 
+}
+.bigcontainer {
+  margin: 0 auto;
+  width: 1200px;
+  border: solid lightgray 2px;
+}
 /*Header*/
 .header {
   height: 64px;
@@ -23,9 +27,6 @@
   border: solid green 1px;
 }
 
-/*.logo img {
-  flex-grow: 2;
-}*/
 
 .nav {
   padding-right: 24px;
@@ -142,46 +143,150 @@
   background-color: lightgray;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  overflow: hidden;
+
 }
 
 .courses {
-padding: 16px 56px;
+  padding: 16px 56px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
   justify-content: space-between;
+  border: solid orange 1px;
 
 }
 
 .course {
-  padding: 16px 16px;
-  height: auto;
+  background-color: white;
+  margin: 16px 16px;
+  max-width: 30%;
+  display: flex;
+  flex-direction: column;
+  border: solid purple 1px;
+}
 
+.course-image img {
+  width: 100%;
+  height: auto;
+  border: solid red 1px;
+}
+
+.course-description {
+  padding: 16px 32px 24px 16px;
+  border: solid green 1px;
 }
 
 
-
+.course-description p {
+  border: solid blue 1px;
+  margin: 0px;
+}
+.course-description h3 {
+  margin: 0px;
+  border: solid blue 1px;
+}
+.course-description h4 {
+  margin: 0px;
+  padding: 8px 0px;
+  border: solid blue 1px;
+}
 /*thesis*/
 
-video {
-
-  height: auto;
+.thesis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid red 1px;
 }
 
+.thesis-title {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.newsfeed {
+  padding: 0px;
+  max-height: 600px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 
 
+  border: solid limegreen 1px;
+}
+
+.news {
+
+  border: solid blue 1px;
+}
+
+.main {
+  width: 60%;
+  border: solid orange 1px;
+  padding: 0px 24px 24px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main .news-video video {
+  width: 100%;
+  height: auto;
+  border: solid purple 1px;
+}
+
+.article {
+  width: 35%;
+  background-color: hotpink;
+
+
+  border: solid black 3px;
+}
+
+.news-image {
+  width: 40%;
+  padding: 16px;
+  border: solid hotpink 2px;
+}
+
+.news-image img {
+  width: 100%;
+}
+
+.news-bite {
+  width: 100%;
+  border: solid green 2px;
+}
+
+.news-bite h3 {
+  margin: 0px;
+}
+
+.newsbite p {
+  margin: 0px;
+}
 
 
 /*footer*/
 
 .footer {
+  height: 75px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+.copyright {
+  padding-left: 24px;
+  padding-top: 16px;
+}
+
+.copyright p {
+  margin: 0px;
+}
+
+.terms {
+  padding-right: 24px;
+  padding-top: 16px;
 }
 
 
