@@ -51,8 +51,6 @@ a:visited {
 }
 
 
-}
-
 /*Header*/
 .header {
   height: 64px;
@@ -140,7 +138,19 @@ a:visited {
   padding: 8px 7em;
 }
 
+/*button animation*/
+.button a:link {
+  color: white;
+}
 
+.button a:visited{
+  color: white;
+}
+
+.button:hover {
+  background-color: #666666;
+  transition: background-color .1s linear 0s;
+}
 
 
 /*events*/
@@ -214,6 +224,10 @@ a:visited {
   font-size: 1.05rem;
 }
 
+.event:hover {
+  background-color: #D3D3D3;
+}
+
 .event a:hover {
   border-bottom: solid #262626 2px;
 }
@@ -284,6 +298,16 @@ a:visited {
   margin: 0px;
   padding: 8px 0px;
   font-size: 1.05rem;
+}
+
+
+/*catalog animation*/
+.course a:hover {
+  border-bottom: solid #262626 2px;
+}
+
+.course:hover {
+  border: solid #262626 2px;
 }
 
 
@@ -365,7 +389,14 @@ a:visited {
 }
 
 
+/*thesis animation*/
+.news a:hover {
+  border-bottom: solid #262626 2px;
+}
 
+.news:hover {
+  background-color: #D3D3D3;
+}
 
 /*footer*/
 
