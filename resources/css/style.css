@@ -1,59 +1,107 @@
 /*Universal Stles*/
 
+/* latin*/
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Rubik'), local('Rubik-Regular'), url(https://fonts.gstatic.com/s/rubik/v7/_mlO9_1N7oXYhEnEzC2l-g.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+/* latin*/
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Rubik Medium'), local('Rubik-Medium'), url(https://fonts.gstatic.com/s/rubik/v7/IUSlgBbgyuDQpy87mBOAc_esZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+/* latin*/
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Rubik Bold'), local('Rubik-Bold'), url(https://fonts.gstatic.com/s/rubik/v7/0hS39AKxpJlEXQF3mVPgrvesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');*/
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
 .html {
-  font-size: 12px;
+  font-size: 14px;
 }
 
-.body {
-
-}
 .bigcontainer {
   margin: 0 auto;
   width: 1200px;
-  border: solid lightgray 2px;
+  color: #262626;
+  font-family: 'Rubik-Regular', sans-serif, fallback, sans-serif;
+  background-color: #F5F5F5;
+  border: solid #D3D3D3 2px;
 }
+
+a:link {
+  color: #262626;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #262626;
+  text-decoration: none;
+}
+
+
+}
+
 /*Header*/
 .header {
   height: 64px;
   display: flex;
   justify-content: space-between;
-  border: solid pink 1px;
+  align-items: center;
 }
 
 .logo {
   display: flex;
   justify-content: flex-start;
   padding-left: 24px;
-  border: solid green 1px;
+  height: 32px;
+}
+
+.colmar,
+.academy {
+  height: 32px;
+  font-size: 24px;
 }
 
 
 .nav {
   padding-right: 24px;
-
   display: flex;
-
-
-  border: solid blue 1px;
 }
 
 .nav ul {
   display: flex;
   align-items: center;
-  border: solid orange 1px;
+}
+
+.nav ul span:hover {
+  border-bottom: solid #48D1CC 2px;
 }
 
 .header .nav .square {
   width: 16px;
   height: 64px;
-  background-color: skyblue;
+  background-color: #48D1CC;
 }
+
+
 
 
 /*Start Here*/
 
 .starthere {
-  background-color: lightgray;
+  background-color: #D3D3D3;
   display: flex;
 }
 
@@ -65,29 +113,33 @@
 
 .starttext {
   padding-left: 16px;
+  padding-right: 75px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  border: solid orange 1px;
+  align-items: flex-start;
 }
 
 .starttext h2 {
-  font-size: 3rem;
+  font-size: 2.6rem;
 }
 
 .starttext p {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+}
+
+.starttext h5 {
+  font-size: 1.15rem;
 }
 
 .button {
   font-size: 1rem;
   font-weight: normal;
-  background-color: black;
+  background-color: #262626;
   color: white;
-  padding: 8px 5em;
-  border: solid green 2px;
+  padding: 8px 7em;
 }
+
 
 
 
@@ -101,11 +153,8 @@
   flex-wrap: wrap;
 }
 
-
-
 .main-story {
   width: 60%;
-  border: solid orange 1px;
 }
 
 .event-main-image {
@@ -117,20 +166,32 @@
 }
 
 .event-main-description h2 {
-  padding: 32px 0px;
+  margin: 0px;
+  padding: 32px 0px 32px 24px;
+  font-size: 2.25rem;
 }
 
+.event-main-description p {
+  margin: 0px;
+  padding-left: 24px;
+  padding-bottom: 32px;
+  font-size: 1.17rem;
+}
+
+.quote p {
+  font-size: 1rem;
+  font-weight: bold;
+}
 
 .story {
   display: flex;
+  align-items: center;
   width: 40%;
-  border: solid purple 2px;
 }
 
 .event-image {
   width: 35%;
   padding: 16px;
-  border: solid red 1px;
 }
 
 .event-image img {
@@ -140,13 +201,30 @@
 
 .event-description {
   width: 65%;
-  border: solid green 1px;
+}
+
+.event-description h3 {
+  margin: 0px;
+  font-size: 1.5rem;
 }
 
 .event-description p {
+  margin: 0px;
   padding: 8px 0px;
+  font-size: 1.05rem;
 }
 
+.event a:hover {
+  border-bottom: solid #262626 2px;
+}
+
+.event a:link {
+  color: #262626;
+}
+
+.event a:visited {
+  color: #262626;
+}
 
 
 
@@ -155,11 +233,19 @@
 .catalog {
   margin: 0 auto;
   width: 1200px;
-  background-color: lightgray;
+  background-color: #D3D3D3;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
 
+.learning {
+  padding: 32px 0px 16px 0px;
+}
+
+.learning h2 {
+  margin: 0px;
+  font-size: 2.5rem;
 }
 
 .courses {
@@ -167,43 +253,37 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  border: solid orange 1px;
-
 }
 
 .course {
   background-color: white;
-  margin: 16px 16px;
+  margin: 0px 16px 16px 16px;
   max-width: 30%;
   display: flex;
   flex-direction: column;
-  border: solid purple 1px;
 }
 
 .course-image img {
   width: 100%;
   height: auto;
-  border: solid red 1px;
 }
 
 .course-description {
   padding: 16px 32px 24px 16px;
-  border: solid green 1px;
 }
 
-
 .course-description p {
-  border: solid blue 1px;
   margin: 0px;
+  font-size: 1.05rem;
 }
 .course-description h3 {
   margin: 0px;
-  border: solid blue 1px;
+  font-size: 1.5rem;
 }
 .course-description h4 {
   margin: 0px;
   padding: 8px 0px;
-  border: solid blue 1px;
+  font-size: 1.05rem;
 }
 
 
@@ -215,12 +295,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: solid red 1px;
 }
 
 .thesis-title {
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+.thesis-title h2 {
+  margin: 0px;
+  font-size: 2.5rem;
 }
 
 .newsfeed {
@@ -229,21 +313,16 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-
-
-  border: solid limegreen 1px;
 }
 
 .news {
   width: 40%;
   display: flex;
-  border: solid blue 1px;
 }
 
 .main {
   width: 60%;
-  border: solid orange 1px;
-  padding: 0px 24px 24px 24px;
+  padding: 0px 24px 32px 24px;
   display: flex;
   flex-direction: column;
 }
@@ -251,21 +330,19 @@
 .main .news-video video {
   width: 100%;
   height: auto;
-  border: solid purple 1px;
+}
+
+.main .news-bite p {
+  font-size: 1.17rem;
 }
 
 .article {
   width: 35%;
-  background-color: hotpink;
-
-
-  border: solid black 3px;
 }
 
 .news-image {
   width: 40%;
   padding: 16px;
-  border: solid hotpink 2px;
 }
 
 .news-image img {
@@ -274,16 +351,20 @@
 
 .news-bite {
   width: 100%;
-  border: solid green 2px;
+  padding-top: 24px;
 }
 
 .news-bite h3 {
   margin: 0px;
+  font-size: 1.5rem;
 }
 
 .newsbite p {
   margin: 0px;
+  font-size: 1.17rem;
 }
+
+
 
 
 /*footer*/
@@ -293,6 +374,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  border-top: solid #e6e6e6 2px;
 }
 
 .copyright {
@@ -308,6 +390,12 @@
   padding-right: 24px;
   padding-top: 16px;
 }
+
+.terms span {
+  padding-left: 8px;
+}
+
+
 
 
 /*mobile considerations*/
