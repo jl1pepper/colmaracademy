@@ -447,6 +447,11 @@ being able to break my code up into different sections, which is why you will se
     margin: 0 auto;
     width: 100%;
   }
+
+  .desktop {
+    display: none;
+  }
+
   .nav,
   .header span {
     display: none;
@@ -457,7 +462,6 @@ being able to break my code up into different sections, which is why you will se
     width: 100%;
     display: flex;
     justify-content: space-between;
-    border: solid purple 1px;
   }
 
 /*mobile starthere*/
@@ -490,7 +494,33 @@ being able to break my code up into different sections, which is why you will se
     padding: 8px 165px;
   }
 
+  /*mobile events*/
+
+  .events {
+    height: auto;
+    padding-top: 16px;
+    flex-wrap: nowrap;
+  }
+
+
+  .main-story {
+    display: none;
+  }
+
+  .story {
+    width: 100%;
+    display: block;
+    padding-bottom: 64px;
+
+  }
+
+  .event-image {
+    width: auto;
 }
+
+  .event-description {
+    padding-left: 16px;
+  }
 
 @media only screen and (min-width: 481px) {
    .mobile {
