@@ -435,18 +435,18 @@ a:visited {
 
 
 /*mobile considerations*/
-@media only screen and (min-width: 481px) {
-  .mobile img {
-    display: none;
-  }
-}
 
+
+/*I realize that there will be some rules that could be grouped.  But my I function best
+being able to break my code up into different sections, which is why you will see them listed separately*/
+
+/*mobile header*/
 @media only screen and (max-width: 480px) {
 
   .bigcontainer {
     margin: 0 auto;
     width: 100%;
-}
+  }
   .nav,
   .header span {
     display: none;
@@ -458,5 +458,42 @@ a:visited {
     display: flex;
     justify-content: space-between;
     border: solid purple 1px;
+  }
+
+/*mobile starthere*/
+
+  .starthere {
+    display: block;
+}
+
+  .starthere img {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .starttext {
+    padding: 0px;
+  }
+  .starttext h2 {
+    margin: 0px;
+    padding: 32px 16px;
+    font-size: 2.6rem;
+  }
+
+  .starttext p {
+    margin: 0px;
+    padding-left: 16px;
+  }
+
+  .starttext h5 {
+    margin: 24px 16px 32px 16px;
+    padding: 8px 165px;
+  }
+
+}
+
+@media only screen and (min-width: 481px) {
+   .mobile {
+    display: none;
   }
 }
