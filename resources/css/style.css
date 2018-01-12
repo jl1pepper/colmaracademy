@@ -427,6 +427,36 @@ a:visited {
 }
 
 
+/*footer animation*/
+.footer a:hover {
+  border-bottom: solid #262626 2px;
+}
+
 
 
 /*mobile considerations*/
+@media only screen and (min-width: 481px) {
+  .mobile img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+  .bigcontainer {
+    margin: 0 auto;
+    width: 100%;
+}
+  .nav,
+  .header span {
+    display: none;
+  }
+
+  .logo {
+    padding: 0px 16px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: solid purple 1px;
+  }
+}
