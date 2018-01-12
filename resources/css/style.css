@@ -1,4 +1,7 @@
-/*Universal Stles*/
+/*Universal Styles*/
+
+/*had some struggles and went down some wrong rabbit holes.. so I'm sure there are some things in here that
+could/should be better.  And I would love any insight into a more elegant way to show/hide desktop/mobile elements.*/
 
 /* latin*/
 @font-face {
@@ -436,6 +439,11 @@ a:visited {
 
 /*mobile considerations*/
 
+@media only screen and (min-width: 481px) {
+   .mobile {
+    display: none;
+  }
+}
 
 /*I realize that there will be some rules that could be grouped.  But my I function best
 being able to break my code up into different sections, which is why you will see them listed separately*/
@@ -491,7 +499,8 @@ being able to break my code up into different sections, which is why you will se
 
   .starttext h5 {
     margin: 24px 16px 32px 16px;
-    padding: 8px 165px;
+
+    padding: 8px auto;
   }
 
   /*mobile events*/
@@ -522,8 +531,64 @@ being able to break my code up into different sections, which is why you will se
     padding-left: 16px;
   }
 
-@media only screen and (min-width: 481px) {
-   .mobile {
-    display: none;
+/*mobile courses*/
+
+  .catalog {
+    width: 100%;
+    background-color: white;
+    border-top: solid #e6e6e6 1px;
+    border-bottom: solid #e6e6e6 1px;
   }
+
+  .courses {
+    padding: 16px 0px;
+    width: 100%;
+    flex-direction: column;
+}
+
+  .course-description {
+    width: 360px;
+    background-color: #D3D3D3;
+  }
+
+
+  .course {
+    max-width: 480px;
+  }
+
+/*mobile thesis*/
+  .news:hover {
+    background-color: white;
+  }
+
+
+  .main {
+    padding: 0px;
+    width: 100%;
+  }
+
+
+  video {
+    padding-bottom: 24px;
+  }
+
+  .news-image,
+  .news-bite {
+    padding: 0px;
+  }
+
+
+/*mobile footer*/
+
+.footer {
+  width: 100%;
+  height: auto;
+}
+
+.copyright {
+  padding-bottom: 16px;
+}
+
+.terms {
+  display: none;
 }
